@@ -37,7 +37,7 @@ passport.use('oidc', new OidcStrategy({
   userInfoURL: 'https://dev-112030.okta.com/oauth2/default/v1/userinfo',
   clientID: '0oafki8ni93UpJuPA356',
   clientSecret: 'DtlWgh1whOVrrG9oU1jhdLMAA8Js23mJkhLgBtoS',
-  callbackURL: 'http://35.224.158.140:8080/authorization-code/callback',
+  callbackURL: 'http://104.154.45.109:8080/authorization-code/callback',
   scope: 'openid profile email offline_access'
 }, (issuer, sub, profile, accessToken, refreshToken, done) => {
   profile['accessToken'] = accessToken;
